@@ -10,6 +10,9 @@ Install mysqlclient
 Install djangorestframeworks
 Install django-cors-headers
 
+Execute de code inside Q10.sql in a MySql server
+config the .env with the correct password for the config root
+
 ### `Start project`
 
 After git clone
