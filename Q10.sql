@@ -309,7 +309,7 @@ CREATE PROCEDURE readTest(IN Tests_id_in INT)
 BEGIN
   SELECT `T`.`name` AS `Test`, `T`.`description` AS `desTest`, `C`.`name` AS `Category`,
   `L`.`lvl`, `L`.`description` AS `desLvl`, `L`.`prize`, `Q`.`description` AS `Question`,
-  `A`.`description` AS `Option`, `A`.`correct`
+  `Q`.`id` AS `Q_id`, `A`.`description` AS `Option`, `A`.`correct`
   FROM `Q10`.`Answers` AS `A`
   INNER JOIN `Q10`.`Questions` AS `Q` ON `Q`.`id`=`A`.`Questions_id`
   INNER JOIN `Q10`.`Levels` AS `L` ON `L`.`id`=`Q`.`Levels_id`
